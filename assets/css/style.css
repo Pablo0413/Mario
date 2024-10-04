@@ -1,0 +1,332 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 5%;
+}
+
+h1 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid lightslategray;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    max-width: 65rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'MuseoModerno', cursive;
+    overflow: hidden;
+}
+
+.item {
+    float: left;
+}
+
+nav li:first-child a {
+    background-color: red;
+}
+
+.red:hover {
+    background-color: red;
+}
+
+nav li:first-child a:hover {
+    background-color: white;
+}
+
+nav li:last-child {
+    float: right;
+}
+
+nav li:last-child:hover {
+    background-color: lightblue;
+}
+
+.item-link {
+    display: inline-block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 1rem;
+    color: black;
+    font-weight: 700;
+}
+
+.lightblue:hover {
+    background-color: lightblue;
+}
+
+.dropdown-menu:hover .menu-content {
+    display: block;
+}
+
+.lightyellow:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.lightgreen:hover {
+    background-color: lightgreen;
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* hero section */
+.hero-section {
+    background-image: url('../images/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 10rem 0 10rem;
+}
+
+.hero-section h1 {
+    text-align: center;
+    text-shadow: #000 0rem 0rem 6.25rem;
+    color: white;
+    font-weight: 700;
+    font-size: 3.75rem;
+}
+
+.main-text h2 {
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
+
+p {
+    text-indent: 2rem;
+}
+
+.text {
+    letter-spacing: 0.04rem;
+    line-height: 1.5;
+}
+
+.subtext {
+    text-align: center;
+    color: lightslategray;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.about-section {
+    margin: 0 auto;
+    display: inline-flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.text-block {
+    width: 45%;
+    text-align: left;
+    margin: 2.5rem 1.5rem;
+}
+
+.about-img {
+    width: 45%;
+    float: right;
+    margin: 2.5rem;
+    object-fit: cover;
+}
+
+.game-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.game-list li a {
+    max-width: 9.8rem;
+    margin: 4%;
+    line-height: 1.2;
+    display: inline-block;
+    color: black;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.game-img {
+    max-height: 12.1875rem;
+}
+
+.group-section {
+    margin: 0 auto;
+    display: inline-flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.group-text {
+    order: 2;
+    width: 49%;
+    text-align: left;
+    margin: 4.5rem 2.5rem;
+
+}
+
+.group-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 0.65rem 1.25rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background-color: red;
+}
+
+.group-image {
+    order: 1;
+    width: 45%;
+    float: left;
+    margin: 2.5rem;
+    object-fit: cover;
+}
+
+.contact-section {
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+.media {
+    margin: 0 1rem;
+}
+
+.socials {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+
+}
+
+.socials:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.footer p {
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+
+    nav li:last-child,
+    .item {
+        float: none;
+    }
+
+    .dropdown-menu:hover .menu-content {
+        display: inline-block;
+        float: right;
+    }
+
+    .about-section {
+        display: block;
+        margin: 0;
+    }
+
+    .about-section .text-block {
+        width: 95%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .about-img {
+        width: 100%;
+        float: none;
+        margin: 0;
+        margin-top: 2.5rem;
+    }
+
+    .group-section {
+        display: block;
+        margin: 0;
+    }
+
+    .group-text {
+        order: 1;
+        width: 95%;
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .group-image {
+        order: 2;
+        width: 100%;
+        display: block;
+        margin: 0;
+        margin-top: 2.5rem;
+    }
+
+    .contact-links {
+        display: block;
+        align-items: left;
+    }
+}
